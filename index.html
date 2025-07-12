@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my monki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;700&family=Nunito:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Custom Cursor -->
+        <div class="cursor"></div>
+
+        <!-- Sticker Background  -->
+        <div class="stickers-container">
+            <!-- Smiley stickers -->
+            <img src="images/smiley.png" alt="smiley sticker" class="sticker smiley" id="smiley1">
+            <img src="images/smiley.png" alt="smiley sticker" class="sticker smiley" id="smiley2">
+            <img src="images/smiley.png" alt="smiley sticker" class="sticker smiley" id="smiley3">
+
+            <!-- Red gummy stickers -->
+            <img src="images/red_gummy.png" alt="red gummy sticker" class="sticker red-gummy" id="red-gummy1">
+            <img src="images/red_gummy.png" alt="red gummy sticker" class="sticker red-gummy" id="red-gummy2">
+            <img src="images/red_gummy.png" alt="red gummy sticker" class="sticker red-gummy" id="red-gummy3">
+            <img src="images/red_gummy.png" alt="red gummy sticker" class="sticker red-gummy" id="red-gummy4">
+
+            <!-- Blue gummy stickers -->
+            <img src="images/blue_gummy.png" alt="blue gummy sticker" class="sticker blue-gummy" id="blue-gummy1">
+            <img src="images/blue_gummy.png" alt="blue gummy sticker" class="sticker blue-gummy" id="blue-gummy2">
+
+            <!-- Green gummy stickers  -->
+            <img src="images/green_gummy.png" alt="green gummy sticker" class="sticker green-gummy" id="green-gummy1">
+            <img src="images/green_gummy.png" alt="green gummy sticker" class="sticker green-gummy" id="green-gummy2">
+            <img src="images/green_gummy.png" alt="green gummy sticker" class="sticker green-gummy" id="green-gummy3">
+
+            <!-- Tulip stickers -->
+            <img src="images/tulip.png" alt="tulip sticker" class="sticker tulip" id="tulip1">
+            <img src="images/tulip.png" alt="tulip sticker" class="sticker tulip" id="tulip2">
+            <img src="images/tulip.png" alt="tulip sticker" class="sticker tulip" id="tulip3">
+
+            <!-- Hat bear stickers -->
+            <img src="images/hat_bear.png" alt="hat bear sticker" class="sticker hat-bear" id="hat-bear1">
+            <img src="images/hat_bear.png" alt="hat bear sticker" class="sticker hat-bear" id="hat-bear2">
+
+            <!-- Olive leaves stickers  -->
+            <img src="images/olive_leaves.png" alt="olive leaves sticker" class="sticker olive-leaves"
+                id="olive-leaves1">
+            <img src="images/olive_leaves.png" alt="olive leaves sticker" class="sticker olive-leaves"
+                id="olive-leaves2">
+
+            <!-- Rainbow stickers  -->
+            <img src="images/rainbow.png" alt="rainbow sticker" class="sticker rainbow" id="rainbow1">
+            <img src="images/rainbow.png" alt="rainbow sticker" class="sticker rainbow" id="rainbow2">
+            <img src="images/rainbow.png" alt="rainbow sticker" class="sticker rainbow" id="rainbow3">
+            <img src="images/rainbow.png" alt="rainbow sticker" class="sticker rainbow" id="rainbow4">
+
+            <!-- Blue flower stickers -->
+            <img src="images/blue_flower.png" alt="blue flower sticker" class="sticker blue-flower" id="blue-flower1">
+            <img src="images/blue_flower.png" alt="blue flower sticker" class="sticker blue-flower" id="blue-flower2">
+            <img src="images/blue_flower.png" alt="blue flower sticker" class="sticker blue-flower" id="blue-flower3">
+            <img src="images/blue_flower.png" alt="blue flower sticker" class="sticker blue-flower" id="blue-flower4">
+
+            <!-- Additional flower stickers -->
+            <img src="images/orange_flower.png" alt="orange flower sticker" class="sticker orange-flower"
+                id="orange-flower">
+            <img src="images/yellow_flower.png" alt="yellow flower sticker" class="sticker yellow-flower"
+                id="yellow-flower">
+            <img src="images/sakura.png" alt="sakura sticker" class="sticker sakura" id="sakura">
+
+            <!-- Bear stickers -->
+            <img src="images/bear.png" alt="bear sticker" class="sticker bear" id="bear">
+        </div>
+
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="main-title">
+                    <img src="images/boots.png" alt="boots" class="monki-inline">
+                    <span class="typewriter" data-text="for my monki"></span>
+                </h1>
+            </header>
+
+            <!-- Daily Message Section -->
+            <section class="daily-message-section">
+                <div class="message-card">
+                    <h2 class="section-title">simping of the day</h2>
+                    <div class="daily-message" id="dailyMessage">
+                        <span class="typewriter-message"></span>
+                    </div>
+                    <div class="message-date" id="messageDate"></div>
+                </div>
+            </section>
+
+            <!-- Secret Code Section -->
+            <section class="secret-section">
+                <div class="secret-card">
+                    <h2 class="section-title">what do i call u?</h2>
+                    <div class="secret-input-container">
+                        <input type="password" id="secretCode" placeholder="enter secret code..." class="secret-input">
+                        <button onclick="checkSecretCode()" class="secret-btn">unlock</button>
+                    </div>
+                    <div class="secret-message" id="secretMessage"></div>
+                </div>
+            </section>
+
+            <!-- Constellation Memory Interface -->
+            <section class="constellation-section">
+                <h2 class="section-title">things about us that live rent free in my head</h2>
+                <div class="constellation-container" id="constellationContainer">
+                    <!-- Stars will be generated by JavaScript -->
+                </div>
+                <div class="memory-display" id="memoryDisplay"></div>
+            </section>
+
+            <!-- Countdown Section -->
+            <section class="countdown-section">
+                <div class="countdown-card">
+                    <h2 class="section-title">countdown to seeing each other</h2>
+                    <div class="countdown-display" id="countdownDisplay">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Playlist and Stats/Trivia Side by Side -->
+            <section class="playlist-stats-section">
+                <div class="side-by-side-container">
+                    <!-- Stats and Trivia Column -->
+                    <div class="stats-trivia-column">
+                        <!-- Live Sports Stats Section -->
+                        <div class="stats-card" id="statsCard">
+                            <h2 class="section-title">live lakers stats</h2>
+                            <div class="stats-content" id="statsContent">
+                                <div class="loading-message">loading live data...</div>
+                            </div>
+                        </div>
+
+                        <!-- LeBron Trivia Section -->
+                        <div class="game-card trivia-card">
+                            <h2 class="section-title">lebron trivia!</h2>
+                            <div class="game-content">
+                                <div class="trivia-question" id="triviaQuestion"></div>
+                                <div class="trivia-options" id="triviaOptions"></div>
+                                <div class="game-info">
+                                    score: <span id="triviaScoreDisplay">0</span> / <span
+                                        id="triviaTotalQuestions">0</span>
+                                </div>
+                                <div class="game-controls">
+                                    <button class="game-btn" id="startTriviaBtn">start trivia</button>
+                                    <button class="game-btn" id="nextQuestionBtn" style="display: none;">next
+                                        question</button>
+                                    <button class="game-btn" id="resetTriviaBtn" style="display: none;">reset
+                                        trivia</button>
+                                </div>
+                                <p class="game-message" id="triviaMessage"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Section -->
+                    <div class="playlist-card playlist-notepad">
+                        <h2 class="section-title">songs that make me think of you</h2>
+                        <div class="playlist-list" id="playlistList">
+                            <!-- Playlist items will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Story Timeline Section (Horizontal) -->
+            <section class="timeline-section">
+                <div class="timeline-card">
+                    <h2 class="section-title">our story of being awesome</h2>
+                    <button class="timeline-reveal-btn" id="revealTimelineBtn">reveal our milestones</button>
+                    <div class="timeline-container-horizontal" id="timelineContainer">
+                        <!-- Timeline milestones will be generated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Catch LeBron Game Section -->
+            <section class="game-section">
+                <div class="game-card">
+                    <h2 class="section-title">catch your sunshine!</h2>
+                    <div class="game-content">
+                        <p class="game-instructions">click as many lebrons as you can in <span
+                                id="gameTimerDisplay">30</span> seconds</p>
+                        <div class="game-info">
+                            score: <span id="gameScore">0</span> | time: <span id="gameCountdown">0</span>s
+                        </div>
+                        <div class="game-area" id="gameArea">
+                            <!-- LeBrons will appear here -->
+                        </div>
+                        <div class="game-controls">
+                            <button class="game-btn" id="startGameBtn">start game</button>
+                            <button class="game-btn" id="resetGameBtn" style="display: none;">reset game</button>
+                        </div>
+                        <p class="game-message" id="gameMessage"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Message Feature -->
+            <section class="message-feature-section">
+                <div class="notebook-container" id="notebookContainer">
+                    <div class="notebook-lock" id="notebookLock">
+                        <h3>anything you wanna say big boy?</h3>
+                        <p>to make sure you're actually zizo enter my fav cartoon character (all caps, no gaps)</p>
+                        <input type="password" id="notebookPassword" placeholder="password..."
+                            class="notebook-password-input">
+                        <button onclick="unlockNotebook()" class="unlock-btn">unlock</button>
+                    </div>
+
+                    <div class="notebook" id="notebook" style="display: none;">
+                        <div class="notebook-header">
+                            <h3>list 10 reasons why you love me</h3>
+                            <button onclick="lockNotebook()" class="lock-btn">🔒</button>
+                        </div>
+                        <form action="https://formspree.io/f/xvgqppwz" method="POST" class="message-form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="nickname (optional)" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="write your confessions here..."
+                                    class="form-textarea" required></textarea>
+                            </div>
+                            <button type="submit" class="send-btn">send note</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

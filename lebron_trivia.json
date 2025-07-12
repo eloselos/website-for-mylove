@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "which nba team did lebron james win his first championship with?",
+      "options": ["cleveland cavaliers", "miami heat", "los angeles lakers", "los angeles clippers"],
+      "answer": "miami heat"
+    },
+    {
+      "question": "what is lebron james' nickname?",
+      "options": ["the king", "black mamba", "air jordan", "the answer"],
+      "answer": "the king"
+    },
+    {
+      "question": "how many nba championships has lebron james won?",
+      "options": ["2", "3", "4", "5"],
+      "answer": "4"
+    },
+    {
+      "question": "in which city was lebron james born?",
+      "options": ["akron, ohio", "cleveland, ohio", "los angeles, california", "miami, florida"],
+      "answer": "akron, ohio"
+    },
+    {
+      "question": "what number does lebron james primarily wear?",
+      "options": ["6", "23", "32", "both 6 and 23"],
+      "answer": "both 6 and 23"
+    }
+  ]
+}
